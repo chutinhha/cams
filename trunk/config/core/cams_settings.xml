@@ -1,0 +1,27 @@
+<SETTINGS>
+	<CONFIGURATION>
+		<CONNECTION>
+			<DATABASE>Asset</DATABASE>
+			<SERVER>win2k8r2x64</SERVER>
+			<PORT>1433</PORT>
+			<UID>ccplusplus</UID>
+			<PASSWORD>password#123</PASSWORD>
+		</CONNECTION>
+	</CONFIGURATION>
+	<DATABASE>
+		<MYSQL>
+			<DATABASE>Asset</DATABASE>
+			<SERVER>win2k8r2x64</SERVER>
+			<PORT>1433</PORT>
+			<UID>ccplusplus</UID>
+			<PASSWORD>password#123</PASSWORD>			
+		</MYSQL>
+		<MSSQL>
+			<DATABASE>Asset</DATABASE>
+			<SERVER>win2k8r2x64</SERVER>
+			<PORT>1433</PORT>
+			<UID>ccplusplus</UID>
+			<PASSWORD>password#123</PASSWORD>					
+		</MSSQL>
+	</DATABASE>
+</SETTINGS>

@@ -1,0 +1,22 @@
+[22:48:00]	################################################[22:48:00]	#####   Company Asset Management System    #####[22:48:00]	#####   ###############################    #####[22:48:00]	#####   Version 1.0.0	(Personal Edition)	#####[22:48:00]	#####   Copyright (c) ccplusplus.com       #####[22:48:00]	################################################[22:48:00]	ENTER : CCAMSDBUtil :: _Exec_gen_tblMastertable ()[22:48:00]	------> gen_tblMastertable <------[22:48:00]	Query received : <select * from tblCatalog WHERE Manufacturer='Lenovo'>[22:48:00]	ENTER : CCAMSDBUtil :: m_InvokeConnection[22:48:00]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[22:48:01]	ENTER : CCAMSDBUtil :: m_ConnectionString[22:48:01]	CS    : Forming Connection String[22:48:01]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=support@123;[22:48:01]	EXIT  : CCAMSDBUtil :: m_ConnectionString[22:48:01]	ENTER : m_show_error[22:48:01]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'Asset'. 01000[22:48:01]	EXIT  : m_show_error[22:48:01]	SQL_SUCCESS_WITH_INFO[22:48:01]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect	CAMS_OK[22:48:01]	EXIT  : CCAMSDBUtil :: m_InvokeConnection[22:48:01]	ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery[22:48:01]	received user query :: <select * from tblCatalog WHERE Manufacturer='Lenovo'>[22:48:01]	ENTER : CCAMSDBUtil :: m_CreateSQLQuery[22:48:01]	Query Created : [select * from tblCatalog WHERE Manufacturer='Lenovo'][22:48:01]	EXIT  : CCAMSDBUtil :: m_CreateSQLQuery[22:48:01]	Query received : <select * from tblCatalog WHERE Manufacturer='Lenovo'>[22:48:01]	EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery[22:48:01]	Executing Query <select * from tblCatalog WHERE Manufacturer='Lenovo'>[22:48:01]	m_strtblCatalog_Manufacturer = Lenovo
+[22:48:01]	8		Lenovo		Lenovo T-500		3		Lenovo		Lenovo		面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面Lenovo		0[22:48:01]	m_strtblCatalog_Manufacturer = Lenovo
+Lenovo
+[22:48:01]	7		Lenovo		Lenovo T-500		3		Lenovo		Lenovo		面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面Lenovo		0[22:48:01]	m_strtblCatalog_Manufacturer = Lenovo
+Lenovo
+Lenovo
+[22:48:01]	11		Lenovo		Lenovo T-500		3		Lenovo		Lenovo		面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面Lenovo		0[22:48:01]	m_strtblCatalog_Manufacturer = Lenovo
+Lenovo
+Lenovo
+Lenovo
+[22:48:01]	12		Lenovo		Lenovo T-500		3		Lenovo		Lenovo		面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面Lenovo		0[22:48:01]	m_strtblCatalog_Manufacturer = Lenovo
+Lenovo
+Lenovo
+Lenovo
+Lenovo
+[22:48:01]	9		Lenovo		Lenovo T-500		3		Lenovo		Lenovo		面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面Lenovo		0[22:48:01]	m_strtblCatalog_Manufacturer = Lenovo
+Lenovo
+Lenovo
+Lenovo
+Lenovo
+Lenovo
+[22:48:01]	10		Lenovo		Lenovo T-500		3		Lenovo		Lenovo		面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面面Lenovo		0[22:48:01]	EXIT  : CCAMSDBUtil :: _Exec_gen_tblMastertable ()[22:48:01]	ENTER : CCAMSDBUtil :: ~CCAMSDBUtil[22:48:01]	EXIT  : CCAMSDBUtil :: ~CCAMSDBUtil

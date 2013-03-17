@@ -1,0 +1,330 @@
+#include "Log.h"
+#include "CAMSDBUtil.h"
+#include "CAMSGlobal.h"
+
+#include <iostream>
+
+class CLog g_tLog;
+
+using namespace std;
+
+/*****************************************************
+ * Function		:
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ *****************************************************/
+ CCAMSDBUtil :: CCAMSDBUtil ()
+ {
+	g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: CCAMSDBUtil");
+	m_strDataBase		= "Asset";
+	m_strServer			= "win2k8r2x64";
+	m_strPort			= "1433";
+	m_strUID			= "ccplusplus";
+	m_strPWD			= "support@123";
+	//m_strSQLQuery		= "select * from tblCatalog";
+	//m_strSQLQuery		= "UPDATE tblCatalog SET Supplier='0' WHERE id='1'";
+	m_strSQLQuery		= "INSERT INTO tblCatalog VALUES ('Lenovo','Lenovo T-500',3,'Lenovo','Lenovo',NULL,0)";
+	//m_strSQLQuery		= " select UserType,UserName,ID,email,Password,UserGroup,dept from tbluserdetails UD , TblUserGroupMaster GM where  deletemode=0 and UD.Status=1 and UD.UserType=GM.UserGroupId and  email='saurabh@gmail.com' and Password='password'";
+
+	m_bDriverConnectStatus  = true;
+	m_isQueryReceived		= false;
+	//g_tLog.Open("../../log/", false);
+	g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: CCAMSDBUtil");
+ }
+
+ /*****************************************************
+ * Function		:
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ *****************************************************/
+ CCAMSDBUtil :: CCAMSDBUtil (string strDataBase, string strServer, string strPort, string strUID, string strPWD)
+ {
+	g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: CCAMSDBUtil - argumented");
+	m_strDataBase	= strDataBase;
+	m_strServer		= strServer;
+	m_strPort		= strPort;
+	m_strUID		= strUID;
+	m_strPWD		= strPWD;
+	m_strSQLQuery	=	"select * from tblCatalog";
+	g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: CCAMSDBUtil");
+ }
+
+ /*****************************************************
+ * Function		:	CCAMSDBUtil
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ *****************************************************/
+ CCAMSDBUtil :: ~CCAMSDBUtil()
+ {
+	 g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: ~CCAMSDBUtil");
+	 g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: ~CCAMSDBUtil");
+ }
+
+ /*****************************************************
+ * Function		:	m_show_error
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ *****************************************************/
+ int m_show_error(unsigned int handletype, const SQLHANDLE& handle)
+ {
+	g_tLog.WriteLog ("ENTER : m_show_error");
+    SQLCHAR sqlstate[1024];
+    SQLCHAR message[1024];
+    if(SQL_SUCCESS == SQLGetDiagRec(handletype, handle, 1, sqlstate, NULL, message, 1024, NULL))
+	{
+		g_tLog.WriteLog ("SQLSTATE: = %s %s", message, sqlstate);
+	}
+	g_tLog.WriteLog ("EXIT  : m_show_error");
+	return 0;
+ }
+
+/*****************************************************
+ * Function		:	m_ConnectionString
+ * Description	:	DRIVER={SQL Server};SERVER=localhost,1433;DATABASE=MY DATABASE;UID=sgupta;PWD=password@123;
+ * Arguments	:	
+ * Returns		:	
+ * Notes		:	Add arguments check and return accordingly, make to int return 
+ *****************************************************/
+ void CCAMSDBUtil :: m_ConnectionString ()
+ {
+	g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: m_ConnectionString");
+
+	g_tLog.WriteLog ("CS    : Forming Connection String");
+
+	m_strConnectionString = "DRIVER={SQL Server};SERVER="+m_strServer+","+m_strPort+";DATABASE="+m_strDataBase+";UID="+m_strUID+";PWD="+m_strPWD+";";
+
+	g_tLog.WriteLog ("CS    : m_strConnectionString = %s", m_strConnectionString.c_str());
+
+	g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: m_ConnectionString");
+ }
+
+ /*****************************************************
+ * Function		:	m_CreateDataBase
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ *****************************************************/
+ int CCAMSDBUtil :: m_CreateDataBase (string strDataBase)
+ {
+	 g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: m_CreateDataBase");
+	 g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: m_CreateDataBase\tCAMS_OK");
+	 return CAMS_OK;
+ }
+
+ /*****************************************************
+ * Function		:	m_SQLDriverConnect
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ *****************************************************/
+ int CCAMSDBUtil :: m_SQLDriverConnect ()
+ {
+	g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: m_SQLDriverConnect");
+
+	// create the connection string now
+	// add a connection check too
+	m_ConnectionString ();
+
+	switch(SQLDriverConnect (
+			sqlconnectionhandle, 
+			NULL, 
+			(SQLCHAR*)m_strConnectionString.c_str(), 
+			SQL_NTS, 
+			retconstring, 
+			1024, 
+			NULL,
+			SQL_DRIVER_NOPROMPT))
+	{
+        case SQL_SUCCESS_WITH_INFO:
+            m_show_error(SQL_HANDLE_DBC, sqlconnectionhandle);
+			g_tLog.WriteLog ("SQL_SUCCESS_WITH_INFO");
+            break;
+        case SQL_INVALID_HANDLE:
+        case SQL_ERROR:
+            m_show_error(SQL_HANDLE_DBC, sqlconnectionhandle);
+			g_tLog.WriteLog ("SQL_ERROR");
+			m_bDriverConnectStatus = false;
+			m_ReleaseConnection ();
+		default:;
+            break;
+    }
+    
+    if(SQL_SUCCESS!=SQLAllocHandle(SQL_HANDLE_STMT, sqlconnectionhandle, &sqlstatementhandle))
+    {
+		m_bDriverConnectStatus = false;
+		m_ReleaseConnection ();
+		return CAMS_FAIL;
+	}
+	g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: m_SQLDriverConnect\tCAMS_OK");
+
+	return CAMS_OK;
+ }
+
+/*****************************************************
+ * Function		:	m_InvokeConnection
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ *****************************************************/
+ int CCAMSDBUtil :: m_InvokeConnection ()
+ {
+	g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: m_InvokeConnection");
+
+    if(SQL_SUCCESS!=SQLAllocHandle(SQL_HANDLE_ENV, SQL_NULL_HANDLE, &sqlenvhandle))
+    {
+		g_tLog.WriteLog ("SQLAllocHandle Fails : Releasing Connection");
+		m_ReleaseConnection ();
+	}
+
+    if(SQL_SUCCESS!=SQLSetEnvAttr(sqlenvhandle,SQL_ATTR_ODBC_VERSION, (SQLPOINTER)SQL_OV_ODBC3, 0)) 
+    {
+		g_tLog.WriteLog ("SQLSetEnvAttr Fails : Releasing Connection");
+		m_ReleaseConnection ();
+	}
+    
+    if(SQL_SUCCESS!=SQLAllocHandle(SQL_HANDLE_DBC, sqlenvhandle, &sqlconnectionhandle))
+    {
+		g_tLog.WriteLog ("SQLAllocHandle Fails : Releasing Connection");
+		m_ReleaseConnection ();
+	}
+	
+	m_SQLDriverConnect ();
+	
+	if (m_bDriverConnectStatus)
+	{
+		if (m_strSQLQuery != "")
+		{
+		   /*
+		    SQLRETURN SQLExecDirect(
+									SQLHSTMT     StatementHandle,
+									SQLCHAR *    StatementText,
+									SQLINTEGER   TextLength);
+			*/
+			//if(SQL_SUCCESS!=SQLExecDirect(sqlstatementhandle, (SQLCHAR*)"select * from Persons", SQL_NTS))
+			//if(SQL_SUCCESS!=SQLExecDirect(sqlstatementhandle, (SQLCHAR*)"select * from tblCatalog", SQL_NTS))
+			//SQLCHAR *buffer = static_cast<SQLCHAR *>(m_strSQLQuery.c_str());
+			g_tLog.WriteLog ("Executing Query <%s>", m_strSQLQuery.c_str());
+			if(SQL_SUCCESS!=SQLExecDirect(sqlstatementhandle, (UCHAR*)m_strSQLQuery.c_str(), SQL_NTS))
+			{
+				m_show_error(SQL_HANDLE_STMT, sqlstatementhandle);
+				m_ReleaseConnection ();
+			}
+			else
+			{
+				char name[64];
+				char address[64];
+				int id;
+				while(SQLFetch(sqlstatementhandle)==SQL_SUCCESS)
+				{
+				   /*
+					*
+					SQLRETURN SQLGetData(
+										SQLHSTMT       StatementHandle,
+										SQLUSMALLINT   Col_or_Param_Num,
+										SQLSMALLINT    TargetType,
+										SQLPOINTER     TargetValuePtr,
+										SQLLEN         BufferLength,
+										SQLLEN *       StrLen_or_IndPtr);
+					*
+				    */
+					SQLGetData(sqlstatementhandle, 1, SQL_C_ULONG, &id, 0, NULL);
+					SQLGetData(sqlstatementhandle, 2, SQL_C_CHAR, name, 64, NULL);
+					SQLGetData(sqlstatementhandle, 3, SQL_C_CHAR, address, 64, NULL);
+					g_tLog.WriteLog ("%d %s %s", id, name, address);
+				}
+			}
+		}
+		else
+		{
+			// handle the default query
+		}
+	}
+	else
+	{
+		return CAMS_FAIL;
+	}
+	g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: m_InvokeConnection");
+	return CAMS_OK;
+ }
+
+/*****************************************************
+ * Function		:	m_CreateSQLQuery
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ * Notes		:	Do a proper check for query length
+ *					also later
+ *****************************************************/
+ int CCAMSDBUtil :: m_CreateSQLQuery (string strSQLQuery)
+ {
+	g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: m_CreateSQLQuery");
+
+	if (m_isQueryReceived)
+	{
+		m_strSQLQuery = strSQLQuery;
+	}
+	else
+	{
+		//LOG ("User query not received, creating default query");
+		m_strSQLQuery = "select * from tblCataLOG";
+	}
+
+	g_tLog.WriteLog ("Query Created : [%s]", m_strSQLQuery.c_str());
+
+	g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: m_CreateSQLQuery");
+
+	return CAMS_SUCCESS;
+ }
+ 
+/*****************************************************
+ * Function		:	m_ReceiveSQLQuery
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ *****************************************************/
+ int CCAMSDBUtil :: m_ReceiveSQLQuery (string strUserSQLQuery)
+ {
+	g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery");
+	g_tLog.WriteLog ("received user query :: <%s>", strUserSQLQuery.c_str());
+	if (strUserSQLQuery != "")
+	{
+		m_isQueryReceived = true;	// make this status true if query received by the user
+	}
+	else
+	{
+		g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery");
+		return CAMS_FAIL;
+	}
+
+	if (m_isQueryReceived)
+	{
+		m_CreateSQLQuery (strUserSQLQuery);
+		g_tLog.WriteLog ("Query received : <%s>", m_strSQLQuery.c_str());
+	}
+
+	g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery");
+
+	return CAMS_OK;
+ }
+
+/*****************************************************
+ * Function		:	m_ReleaseConnection
+ * Description	:	
+ * Arguments	:	
+ * Returns		:	
+ *****************************************************/
+ void CCAMSDBUtil :: m_ReleaseConnection ()
+ {
+	g_tLog.WriteLog ("ENTER : CCAMSDBUtil :: m_ReleaseConnection ()");
+
+	SQLFreeHandle(SQL_HANDLE_STMT, sqlstatementhandle );
+	SQLDisconnect(sqlconnectionhandle);
+	SQLFreeHandle(SQL_HANDLE_DBC, sqlconnectionhandle);
+	SQLFreeHandle(SQL_HANDLE_ENV, sqlenvhandle);
+
+	g_tLog.WriteLog ("EXIT  : CCAMSDBUtil :: m_ReleaseConnection ()");
+ }

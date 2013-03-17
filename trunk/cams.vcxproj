@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25630BAF-B6A5-47AA-BE4D-5CBDBBF934DA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>cams</RootNamespace>
+    <ProjectName>cams</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\lib\win32\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DOM_MSXML4;WIN32;_DEBUG;_WINDOWS;_USRDLL;CAMS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\ideasXML;.\3rd-Apps\fsEDs\include;</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;6387;4114</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib; gdi32.lib; winspool.lib; comdlg32.lib; advapi32.lib; shell32.lib; ole32.lib; oleaut32.lib; uuid.lib; odbc32.lib; odbccp32.lib; </AdditionalDependencies>
+      <OutputFile>.\lib\win32\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>fsEDs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib\win32;.\3rd-Apps\fsEDs\lib\win32;</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CAMS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CAMS_CLI.cpp" />
+    <ClCompile Include="src\CAMS_Credential_Utility.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_DBUtil.cpp" />
+    <ClCompile Include="src\CAMS_Debug_File.cpp" />
+    <ClCompile Include="src\CAMS_Exec.cpp" />
+    <ClCompile Include="src\CAMS_Gen_Utility.cpp" />
+    <ClCompile Include="src\CAMS_Initialize.cpp" />
+    <ClCompile Include="src\CAMS_Instance_Control.cpp" />
+    <ClCompile Include="src\CAMS_Language_Support.cpp" />
+    <ClCompile Include="src\CAMS_Log.cpp" />
+    <ClCompile Include="src\CAMS_Wrapper.cpp" />
+    <ClCompile Include="src\ideasXML\DOMParser.cpp" />
+    <ClCompile Include="src\ideasXML\IdEntityMap.cpp" />
+    <ClCompile Include="src\ideasXML\IdXmlUtility.cpp" />
+    <ClCompile Include="src\ideasXML\IdXmlWkr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\CAMSDBUtil.h" />
+    <ClInclude Include="include\CAMSGlobal.h" />
+    <ClInclude Include="include\CAMS_CLI.h" />
+    <ClInclude Include="include\CAMS_Credential_Utility.h" />
+    <ClInclude Include="include\CAMS_Debug_File.h" />
+    <ClInclude Include="include\CAMS_Exec.h" />
+    <ClInclude Include="include\CAMS_Gen_Utility.h" />
+    <ClInclude Include="include\CAMS_Initialize.h" />
+    <ClInclude Include="include\CAMS_Instance_Control.h" />
+    <ClInclude Include="include\CAMS_Language_Support.h" />
+    <ClInclude Include="include\CAMS_Linux_Include.h" />
+    <ClInclude Include="include\CAMS_Query_List.h" />
+    <ClInclude Include="include\CAMS_Windows_Include.h" />
+    <ClInclude Include="include\CAMS_Wrapper.h" />
+    <ClInclude Include="include\IdDeliUtility.h" />
+    <ClInclude Include="include\ideasXML\DOMParser.h" />
+    <ClInclude Include="include\ideasXML\IdCommons.h" />
+    <ClInclude Include="include\ideasXML\IdEntityMap.h" />
+    <ClInclude Include="include\ideasXML\IdRegExpr.h" />
+    <ClInclude Include="include\ideasXML\IdStringUtils.h" />
+    <ClInclude Include="include\ideasXML\IdWorker.h" />
+    <ClInclude Include="include\ideasXML\IdXmlUtility.h" />
+    <ClInclude Include="include\ideasXML\IdXmlWkr.h" />
+    <ClInclude Include="include\IdFileUtils.h" />
+    <ClInclude Include="include\IdGlobals.h" />
+    <ClInclude Include="include\IdPLatformSpDfns.h" />
+    <ClInclude Include="include\IdTimeUtils.h" />
+    <ClInclude Include="include\IdTypes.h" />
+    <ClInclude Include="include\KtiThread.h" />
+    <ClInclude Include="include\Log.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

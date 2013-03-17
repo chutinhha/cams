@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cams", "cams.vcxproj", "{25630BAF-B6A5-47AA-BE4D-5CBDBBF934DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B22C943-D026-4CD9-B4E0-69302D072D70} = {0B22C943-D026-4CD9-B4E0-69302D072D70}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cams_test", "application\cams_test\cams_test.vcxproj", "{EB35CDF6-AC7A-4B69-B5F8-FC4BF668D0C6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B22C943-D026-4CD9-B4E0-69302D072D70} = {0B22C943-D026-4CD9-B4E0-69302D072D70}
+		{25630BAF-B6A5-47AA-BE4D-5CBDBBF934DA} = {25630BAF-B6A5-47AA-BE4D-5CBDBBF934DA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fsEDs", "3rd-Apps\fsEDs\fsEDs.vcxproj", "{0B22C943-D026-4CD9-B4E0-69302D072D70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25630BAF-B6A5-47AA-BE4D-5CBDBBF934DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25630BAF-B6A5-47AA-BE4D-5CBDBBF934DA}.Debug|Win32.Build.0 = Debug|Win32
+		{25630BAF-B6A5-47AA-BE4D-5CBDBBF934DA}.Release|Win32.ActiveCfg = Release|Win32
+		{25630BAF-B6A5-47AA-BE4D-5CBDBBF934DA}.Release|Win32.Build.0 = Release|Win32
+		{EB35CDF6-AC7A-4B69-B5F8-FC4BF668D0C6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EB35CDF6-AC7A-4B69-B5F8-FC4BF668D0C6}.Debug|Win32.Build.0 = Debug|Win32
+		{EB35CDF6-AC7A-4B69-B5F8-FC4BF668D0C6}.Release|Win32.ActiveCfg = Release|Win32
+		{EB35CDF6-AC7A-4B69-B5F8-FC4BF668D0C6}.Release|Win32.Build.0 = Release|Win32
+		{0B22C943-D026-4CD9-B4E0-69302D072D70}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B22C943-D026-4CD9-B4E0-69302D072D70}.Debug|Win32.Build.0 = Debug|Win32
+		{0B22C943-D026-4CD9-B4E0-69302D072D70}.Release|Win32.ActiveCfg = Release|Win32
+		{0B22C943-D026-4CD9-B4E0-69302D072D70}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

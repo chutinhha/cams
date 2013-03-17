@@ -1,0 +1,33 @@
+cams solution, has two projects 
+1. cams
+2. cams_test
+
+first project (cams) is used to create the cams static library (cams.lib)
+second project cams_test is a dummy application that is uses cams.lib and intiates the cams CLI.
+
+CAMS durectory structure:
+1. Debug			-->	Intermediate directory during build
+2. log				--> generates the CAMS event log, by date
+3. 3rd-Apps			--> any 3rd party applications
+4. include			-->	contains the header files
+5. lib				--> contains the generated library, .h files
+6. src				--> source code .cpp files
+7. bin				--> test executable to run
+8. config			--> configuration files that are in use or will be in use in future versions
+9. database			--> stores the database script and backup files
+10. application		--> project directory for test applicarion
+
+To run CAMS go under bin\win32 directory and run cams_test.exe
+
+Default Login details
+username	:	cams
+password	:	cams
+
+ 1 -> About CAMS
+ 2 -> DashBoard
+ 3 -> Supported Assets
+ 4 -> Run as a Admin User
+ 5 -> Go to Sleep Mode
+ 6 -> Completely Exit CAMS
+ 
+ for option '1', there is file named 'About_CAMS' under config/core. You can add your required details to get produced.

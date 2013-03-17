@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ideasXML">
+      <UniqueIdentifier>{c7da8ed6-3f7c-44f1-82b3-359a88f1d266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ideasXML">
+      <UniqueIdentifier>{c2101262-4861-421e-9d66-062075b705fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CAMS_DBUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_Wrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_Credential_Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_CLI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_Instance_Control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_Debug_File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_Exec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_Gen_Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_Language_Support.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ideasXML\DOMParser.cpp">
+      <Filter>Source Files\ideasXML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ideasXML\IdEntityMap.cpp">
+      <Filter>Source Files\ideasXML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ideasXML\IdXmlUtility.cpp">
+      <Filter>Source Files\ideasXML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ideasXML\IdXmlWkr.cpp">
+      <Filter>Source Files\ideasXML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CAMS_Initialize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\CAMSDBUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMSGlobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IdDeliUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IdFileUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IdGlobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IdPLatformSpDfns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IdTimeUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IdTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\KtiThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Credential_Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_CLI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Instance_Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Debug_File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Exec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Windows_Include.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Linux_Include.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Query_List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Gen_Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Language_Support.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ideasXML\DOMParser.h">
+      <Filter>Header Files\ideasXML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ideasXML\IdCommons.h">
+      <Filter>Header Files\ideasXML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ideasXML\IdEntityMap.h">
+      <Filter>Header Files\ideasXML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ideasXML\IdRegExpr.h">
+      <Filter>Header Files\ideasXML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ideasXML\IdStringUtils.h">
+      <Filter>Header Files\ideasXML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ideasXML\IdWorker.h">
+      <Filter>Header Files\ideasXML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ideasXML\IdXmlUtility.h">
+      <Filter>Header Files\ideasXML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ideasXML\IdXmlWkr.h">
+      <Filter>Header Files\ideasXML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_Initialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
