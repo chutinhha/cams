@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="stocks.xsl"?>
+<cams xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <connection>
+    <database>Asset</database>
+    <server>win2k8r2x64</server>
+    <port>1433</port>
+	<uid>ccplusplus</uid>
+	<password>password@12345</password>
+  </connection>
+</cams>
+

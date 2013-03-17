@@ -1,0 +1,58 @@
+[00:32:35]	ENTER : CCAMSCLI :: m_tblAssetDetails[00:32:35]	ENTER : CCAMSCLI :: m_DisplayBanner[00:32:35]	EXIT  : CCAMSCLI :: m_DisplayBanner[00:32:35]	ENTER : CCAMSGenUtility :: m_getChar[00:32:36]	 Received <1> from user[00:32:36]	EXIT  : CCAMSGenUtility :: m_getChar[00:32:36]	cTmp = 1[00:32:36]	ENTER : CCAMSCLI :: m_DisplayBanner[00:32:36]	EXIT  : CCAMSCLI :: m_DisplayBanner[00:32:36]	ENTER : CCAMSCLI :: m_tblAssetDetails_HardWare[00:32:42]	Creating Query to fetch the Asset details for Asset Code <001>[00:32:42]	ENTER : CCAMSDBUtil :: m_CreatetblAssetDetailsQuery ()[00:32:42]	Query Created = <select * from tblAssetDetails where AssetCode = '001'>[00:32:42]	EXIT  : CCAMSDBUtil :: m_CreatetblAssetDetailsQuery () - <0> -1033[00:32:42]	ENTER : CCAMSDBUtil :: _Exec_tblAssetDetails ()[00:32:42]	------> tblAssetDetails <------[00:32:42]	Query received : <select * from tblAssetDetails where AssetCode = '001'>[00:32:42]	ENTER : CCAMSDBUtil :: m_InvokeConnection[00:32:42]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[00:32:42]	ENTER : CCAMSDBUtil :: m_ConnectionString[00:32:42]	CS    : Forming Connection String[00:32:42]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=password@12345;[00:32:42]	EXIT  : CCAMSDBUtil :: m_ConnectionString[00:32:42]	ENTER : m_show_error[00:32:42]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'Asset'. 01000[00:32:42]	EXIT  : m_show_error[00:32:42]	SQL_SUCCESS_WITH_INFO[00:32:42]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect - [0] - 221[00:32:42]	IC :: m_SQLDriverConnect success[00:32:42]	EXIT  : CCAMSDBUtil :: m_InvokeConnection - [1] - 275[00:32:42]	ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery[00:32:42]	received user query :: <select * from tblAssetDetails where AssetCode = '001'>[00:32:42]	ENTER : CCAMSDBUtil :: m_CreateSQLQuery[00:32:42]	Query Created : [select * from tblAssetDetails where AssetCode = '001'][00:32:42]	EXIT  : CCAMSDBUtil :: m_CreateSQLQuery[00:32:42]	Query received : <select * from tblAssetDetails where AssetCode = '001'>[00:32:42]	EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery- [0] - 338[00:32:42]	Executing Query <select * from tblAssetDetails where AssetCode = '001'>[00:32:42]	m_strtblAssetDetails_AssetCode = 001
+[00:32:42]	2	001	Laptop	1	1	1	01	laptop product	1	Lenovo	1111	1111	5000.500000	1000	0[00:32:42]	EXIT  : CCAMSDBUtil :: _Exec_tblAssetDetails () Asset Details with Asset Code [001]
+
+
+ ----------------------------------------
+
+    Id                 :   2
+    Asset Code         :   001
+    Asset Name         :   Laptop
+    Asset Group        :   1
+    Supplier           :   1
+    Support Provider   :   1
+    Catalog No         :   01
+    Description        :   laptop product
+    Asset Type         :   1
+    Asset Model        :   Lenovo
+    Company Serial     :   1111
+    Asset Model        :   1111
+
+ ----------------------------------------
+
+[00:32:42]	EXIT  : CCAMSCLI :: m_tblAssetDetails_HardWare - [1] - 815[00:32:42]	ENTER : CCAMSGenUtility :: m_getChar[00:32:44]	 Received <m> from user[00:32:44]	EXIT  : CCAMSGenUtility :: m_getChar[00:32:44]	ENTER : CCAMSCLI :: m_DisplayBanner[00:32:44]	EXIT  : CCAMSCLI :: m_DisplayBanner
+
+CAMS Exiting Completely, Wait till exit !!!
+[00:32:52]	EXIT  : CCAMSCLI :: m_tblAssetDetails - [0] - 723[00:33:32]	ENTER : CCAMSCLI :: m_tblAssetDetails[00:33:32]	ENTER : CCAMSCLI :: m_DisplayBanner[00:33:32]	EXIT  : CCAMSCLI :: m_DisplayBanner[00:33:32]	ENTER : CCAMSGenUtility :: m_getChar[00:33:33]	 Received <1> from user[00:33:33]	EXIT  : CCAMSGenUtility :: m_getChar[00:33:33]	cTmp = 1[00:33:33]	ENTER : CCAMSCLI :: m_DisplayBanner[00:33:33]	EXIT  : CCAMSCLI :: m_DisplayBanner[00:33:33]	ENTER : CCAMSCLI :: m_tblAssetDetails_HardWare[00:33:36]	ENTER : CCAMSGenUtility :: m_getChar[00:33:49]	 Received <m> from user[00:33:49]	EXIT  : CCAMSGenUtility :: m_getChar[00:33:49]	ENTER : CCAMSGenUtility :: m_getChar[00:33:49]	 Received <> from user[00:33:49]	EXIT  : CCAMSGenUtility :: m_getChar[00:33:49]	ENTER : CCAMSCLI :: m_tblAssetDetails_HardWare[00:33:51]	ENTER : CCAMSGenUtility :: m_getChar[00:33:54]	 Received <r> from user[00:33:54]	EXIT  : CCAMSGenUtility :: m_getChar[00:33:54]	ENTER : CCAMSGenUtility :: m_getChar[00:33:54]	 Received <> from user[00:33:54]	EXIT  : CCAMSGenUtility :: m_getChar[00:33:54]	ENTER : CCAMSCLI :: m_tblAssetDetails_HardWare[00:33:56]	ENTER : CCAMSGenUtility :: m_getChar[00:33:58]	 Received <0> from user[00:33:58]	EXIT  : CCAMSGenUtility :: m_getChar[00:33:58]	ENTER : CCAMSGenUtility :: m_getChar[00:33:58]	 Received <0> from user[00:33:58]	EXIT  : CCAMSGenUtility :: m_getChar[00:33:58]	ENTER : CCAMSCLI :: m_tblAssetDetails_HardWare[00:34:01]	Creating Query to fetch the Asset details for Asset Code <001>[00:34:01]	ENTER : CCAMSDBUtil :: m_CreatetblAssetDetailsQuery ()[00:34:01]	Query Created = <select * from tblAssetDetails where AssetCode = '001'>[00:34:01]	EXIT  : CCAMSDBUtil :: m_CreatetblAssetDetailsQuery () - <0> -1033[00:34:01]	ENTER : CCAMSDBUtil :: _Exec_tblAssetDetails ()[00:34:01]	------> tblAssetDetails <------[00:34:01]	Query received : <select * from tblAssetDetails where AssetCode = '001'>[00:34:01]	ENTER : CCAMSDBUtil :: m_InvokeConnection[00:34:01]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[00:34:01]	ENTER : CCAMSDBUtil :: m_ConnectionString[00:34:01]	CS    : Forming Connection String[00:34:01]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=password@12345;[00:34:01]	EXIT  : CCAMSDBUtil :: m_ConnectionString[00:34:01]	ENTER : m_show_error[00:34:01]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'Asset'. 01000[00:34:01]	EXIT  : m_show_error[00:34:01]	SQL_SUCCESS_WITH_INFO[00:34:01]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect - [0] - 221[00:34:01]	IC :: m_SQLDriverConnect success[00:34:01]	EXIT  : CCAMSDBUtil :: m_InvokeConnection - [1] - 275[00:34:01]	ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery[00:34:01]	received user query :: <select * from tblAssetDetails where AssetCode = '001'>[00:34:01]	ENTER : CCAMSDBUtil :: m_CreateSQLQuery[00:34:01]	Query Created : [select * from tblAssetDetails where AssetCode = '001'][00:34:01]	EXIT  : CCAMSDBUtil :: m_CreateSQLQuery[00:34:01]	Query received : <select * from tblAssetDetails where AssetCode = '001'>[00:34:01]	EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery- [0] - 338[00:34:01]	Executing Query <select * from tblAssetDetails where AssetCode = '001'>[00:34:01]	m_strtblAssetDetails_AssetCode = 001
+[00:34:01]	2	001	Laptop	1	1	1	01	laptop product	1	Lenovo	1111	1111	5000.500000	1000	0[00:34:01]	EXIT  : CCAMSDBUtil :: _Exec_tblAssetDetails () Asset Details with Asset Code [001]
+
+
+ ----------------------------------------
+
+    Id                 :   2
+    Asset Code         :   001
+    Asset Name         :   Laptop
+    Asset Group        :   1
+    Supplier           :   1
+    Support Provider   :   1
+    Catalog No         :   01
+    Description        :   laptop product
+    Asset Type         :   1
+    Asset Model        :   Lenovo
+    Company Serial     :   1111
+    Asset Model        :   1111
+
+ ----------------------------------------
+
+[00:34:01]	EXIT  : CCAMSCLI :: m_tblAssetDetails_HardWare - [1] - 816[00:34:01]	EXIT  : CCAMSCLI :: m_tblAssetDetails_HardWare - [1] - 816[00:34:01]	EXIT  : CCAMSCLI :: m_tblAssetDetails_HardWare - [1] - 816[00:34:01]	EXIT  : CCAMSCLI :: m_tblAssetDetails_HardWare - [1] - 816[00:34:01]	ENTER : CCAMSGenUtility :: m_getChar[00:34:02]	 Received <m> from user[00:34:02]	EXIT  : CCAMSGenUtility :: m_getChar[00:34:02]	ENTER : CCAMSCLI :: m_DisplayBanner[00:34:02]	EXIT  : CCAMSCLI :: m_DisplayBanner
+
+CAMS Exiting Completely, Wait till exit !!!
+[00:34:10]	EXIT  : CCAMSCLI :: m_tblAssetDetails - [0] - 723[00:36:40]	ENTER : CCAMSCLI :: m_DashBoard
+
+DashBoard feature is not available in Version 1.0.0
+
+[00:36:40]	EXIT  : CCAMSCLI :: m_DashBoard - [1] - 933[00:36:40]	ENTER : CCAMSCLI :: m_GetQuickUserResponse
+
+To go back to Main Menu press [M/m], Press Enter Button.
+[00:36:44]	EXIT  : CCAMSCLI :: m_GetQuickUserResponse[00:36:44]	ENTER : CCAMSCLI :: m_DisplayBanner[00:36:44]	EXIT  : CCAMSCLI :: m_DisplayBanner
+
+CAMS Exiting Completely, Wait till exit !!!

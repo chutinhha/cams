@@ -1,0 +1,4 @@
+[22:37:23]	ENTER : CCAMSCLI :: m_Login[22:37:23]	ENTER : CCAMSCLI :: m_DisplayBanner[22:37:23]	EXIT  : CCAMSCLI :: m_DisplayBanner[22:37:23]	ENTER : CCAMSGenUtility :: m_getChar[22:37:26]	 Received <n> from user[22:37:26]	EXIT  : CCAMSGenUtility :: m_getChar[22:37:30]	ENTER : CCAMSCLI :: m_AddNewLoginUser Enter your desired UserName : 
+[22:37:45]	ENTER : CCAMSGenUtility :: m_ValidateUserResponse[22:37:45]	EXIT  : CCAMSGenUtility :: m_ValidateUserResponse - 1 Enter your Contact Number : 
+[22:37:53]	ENTER : CCAMSGenUtility :: m_ValidateUserResponse[22:37:53]	EXIT  : CCAMSGenUtility :: m_ValidateUserResponse - 1 Enter your Email Address : 
+[22:38:05]	ENTER : CCAMSGenUtility :: m_ValidateUserResponse[22:38:05]	EXIT  : CCAMSGenUtility :: m_ValidateUserResponse - 1

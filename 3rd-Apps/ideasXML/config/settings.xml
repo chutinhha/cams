@@ -1,0 +1,42 @@
+ <SETTINGS>
+   <CONFIGURATION>
+    <self_guid>100A-INDIA-LINUX84</self_guid>
+    <self_name>100A-INDIA-LINUX84</self_name>
+    <self_address>ums.100A-INDIA-LINUX84</self_address>
+    <self_ip_lan >192.168.22.64</self_ip_lan>
+    <self_dn_wan />
+    <self_ip_wan />
+    <self_listen_port>9095</self_listen_port>
+    <self_proxy_port>9096</self_proxy_port>
+    <tcp_session_timeout>300</tcp_session_timeout>
+    <transport_log />
+    <os_family>linux</os_family>
+    <monitor_policy_interval>300</monitor_policy_interval>
+    <dumb_polling_interval>120</dumb_polling_interval>
+    <parallel_exec_limit>5</parallel_exec_limit>
+    <max_job_duration>18005</max_job_duration>
+    <async_worker_timout>300</async_worker_timout>
+    <max_event_priority>5</max_event_priority>
+	<shell_version>2.0.3</shell_version>
+    <console_logging>1</console_logging>
+    <cron_track_missed>1</cron_track_missed>
+    <max_poll_queue_size>50</max_poll_queue_size>
+    <max_comm_xchgs>5</max_comm_xchgs>
+    <comm_xchg_timeout>15</comm_xchg_timeout>
+    <dumb_relative>false</dumb_relative> 
+</CONFIGURATION>
+ <MASTER name="ums" dumb="false" pushallowed="true">
+    <iplan>192.168.22.64</iplan>
+    <ipwan />
+    <dnwan />
+    <port>8080</port>
+  </MASTER>
+  <CHILDREN>
+	  <CHILD name=" " dumb="false" pushallowed="false">
+		<iplan></iplan>
+		<ipwan />
+		<dnwan />
+		<port></port>
+	  </CHILD>
+  </CHILDREN>
+</SETTINGS>

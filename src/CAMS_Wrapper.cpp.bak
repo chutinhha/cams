@@ -1,0 +1,60 @@
+/**************************************************************
+ ** File			:	CAMS_Wrapper.cpp
+ ** Author			:	
+ **	Date Created	:	
+ ** Description		:	Interface between UI and backend class
+ **					:	function here are only used to interact 
+ **					:	with the c++ core engine
+ **	return			:	different kind of of supported values
+ **	Notes			:	enhancement left
+ **************************************************************/
+ #include <iostream>
+ #include <stdio.h> 
+ #include <string>
+ #include <cstring>
+
+ #include "Log.h"
+ #include "CAMSDBUtil.h"
+ #include "CAMSGlobal.h"
+ 
+ using namespace std;
+
+ extern "C"
+ {
+
+/**************************************************************
+ * Function		:	_CAMS_Exec_Start_Up
+ * Description	:	initializer function for all the global startup
+ *					operation. Put every initials here
+ * Return		:	success / fail
+ **************************************************************/
+ __declspec(dllexport) bool _CAMS_Exec_Start_Up () 
+ {
+	 extern CLog g_tLog;
+	 g_tLog.Open("../../log/", false);
+	 return true;
+ }
+
+/**************************************************************
+ * Function		:	_CAMS_Exec_DB_Op
+ * Description	:	receives db query to execute.
+ * Return		:	query result in C string
+ * Note			:	
+ **************************************************************/
+ __declspec(dllexport) char *_CAMS_Exec_DB_Op(char *szDBQuery) 
+ {
+	 char *szResult = NULL;
+	 return szResult;
+ }
+/**************************************************************
+ * Function		:	_CAMS_Exec_Clean_Up
+ * Description	:	call all the destructors here
+ * Return		:	
+ * Note			:	
+ **************************************************************/
+ __declspec(dllexport) bool _CAMS_Exec_Clean_Up() 
+ {
+	return true;
+ }
+
+}

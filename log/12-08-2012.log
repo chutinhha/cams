@@ -1,0 +1,40 @@
+[22:34:05]	ENTER : CCAMS_Initialize :: m_initialize_config_settings[22:34:05]	Opening Configuration Settings file <../../config/core/cams_settings.xml>XML Load Success:<../../config/core/cams_settings.xml>
+Looking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:DATABASE
+[22:34:05]	Found database = AssetLooking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:SERVER
+[22:34:05]	Found server = win2k8r2x64Looking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:PORT
+[22:34:05]	Found port = 1433Looking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:UID
+[22:34:05]	Found uid = ccplusplusLooking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:PASSWORD
+[22:34:05]	Found password, skipping print for security reason[22:34:05]	ENTER : CCAMS_Initialize :: m_initialize_config_settings
+
+CAMS Exiting Completely, Wait till exit !!!
+[23:21:14]	ENTER : CCAMS_Initialize :: m_initialize_config_settings[23:21:14]	Opening Configuration Settings file <../../config/core/cams_settings.xml>XML Load Success:<../../config/core/cams_settings.xml>
+Looking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:DATABASE
+[23:21:16]	Found database = AssetLooking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:SERVER
+[23:21:17]	Found server = win2k8r2x64Looking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:PORT
+[23:21:17]	Found port = 1433Looking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:UID
+[23:21:17]	Found uid = ccplusplusLooking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:PASSWORD
+[23:21:17]	Found password, skipping print for security reason[23:21:17]	ENTER : CCAMS_Initialize :: m_initialize_config_settings[23:21:39]	ENTER : CCAMSCLI :: m_tblAssetDetails[23:21:39]	ENTER : CCAMSCLI :: m_DisplayBanner[23:21:39]	EXIT  : CCAMSCLI :: m_DisplayBanner
+ Supported Assests List
+ 1. Hardware Assest's
+ 2. Software Assest's
+[23:21:39]	ENTER : CCAMSGenUtility :: m_getChar[23:21:42]	 Received <1> from user[23:21:42]	EXIT  : CCAMSGenUtility :: m_getChar[23:21:42]	cTmp = 1[23:21:42]	ENTER : CCAMSCLI :: m_DisplayBanner[23:21:42]	EXIT  : CCAMSCLI :: m_DisplayBanner[23:23:09]	ENTER : CCAMSCLI :: m_tblAssetDetails_HardWare[23:23:10]	creating query to fetch the no of hardware assets[23:23:16]	ENTER : CCAMSDBUtil :: _Exec_tblAssetDetails ()[23:23:16]	------> tblAssetDetails <------[23:23:17]	Query received : <select * from tblAssetDetails>[23:23:17]	ENTER : CCAMSDBUtil :: m_InvokeConnection[23:23:17]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[23:23:17]	ENTER : CCAMSDBUtil :: m_ConnectionString[23:23:17]	CS    : Forming Connection String[23:23:17]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=password@12345;[23:23:17]	EXIT  : CCAMSDBUtil :: m_ConnectionString[23:23:37]	ENTER : m_show_error[23:23:37]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][DBNETLIB]SQL Server does not exist or access denied. 08001[23:23:37]	EXIT  : m_show_error[23:23:37]	SQL_ERROR[23:23:37]	ENTER : CCAMSDBUtil :: m_ReleaseConnection ()[23:23:37]	EXIT  : CCAMSDBUtil :: m_ReleaseConnection ()[23:23:37]	ENTER : CCAMSDBUtil :: m_ReleaseConnection ()[23:23:37]	EXIT  : CCAMSDBUtil :: m_ReleaseConnection ()[23:23:37]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect - [-1] - 227[23:23:37]	IC :: m_SQLDriverConnect failed[23:23:37]	EXIT  : CCAMSDBUtil :: m_InvokeConnection - [-1] - 280

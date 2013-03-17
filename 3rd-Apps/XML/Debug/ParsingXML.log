@@ -1,0 +1,25 @@
+﻿Build started 12/2/2012 11:41:37 PM.
+     1>Project "E:\0612CPP01\cams\3rd-Apps\XML\ParsingXML.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\xml.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\xml.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D CAMS_DEBUG_XML /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug/ParsingXML.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D CAMS_DEBUG_XML /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug/ParsingXML.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt CAMS_XML_Parse.cpp
+         CAMS_XML_Parse.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:".\lib\win32\xml.lib" /NOLOGO .\Debug/CAMS_XML_Parse.obj
+         .\Debug/StdAfx.obj
+         ParsingXML.vcxproj -> E:\0612CPP01\cams\3rd-Apps\XML\.\lib\win32\xml.lib
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\Debug/ParsingXML.bsc" Debug\CAMS_XML_Parse.sbr Debug\StdAfx.sbr
+       FinalizeBuildStatus:
+         Deleting file "Debug\xml.unsuccessfulbuild".
+         Touching "Debug\xml.lastbuildstate".
+     1>Done Building Project "E:\0612CPP01\cams\3rd-Apps\XML\ParsingXML.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.38

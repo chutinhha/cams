@@ -1,0 +1,4 @@
+database configuration:
+----------------------
+1. change the cams_settings.xml to support thr multiple databases
+

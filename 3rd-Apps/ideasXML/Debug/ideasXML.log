@@ -1,0 +1,197 @@
+﻿Build started 12/7/2012 11:07:30 PM.
+     1>Project "E:\0612CPP01\cams\3rd-Apps\ideasXML\ideasXML.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\ideasXML.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\ideasXML.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\include /ZI /nologo /W3 /WX- /Od /Oy- /D DOM_MSXML4 /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\DOMParser.cpp src\IdEntityMap.cpp src\IdXmlUtility.cpp src\IdXmlWkr.cpp src\Log.cpp
+         Log.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(57): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(62): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(68): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(73): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(79): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(84): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(93): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(281): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(39): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(97): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(125): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(149): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idglobals.h(506): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\log.cpp(153): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(197) : see declaration of 'strtok'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\log.cpp(161): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\log.cpp(165): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\log.cpp(167): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\log.cpp(199): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\log.cpp(201): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\log.cpp(233): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\log.cpp(235): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+         IdXmlWkr.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(57): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(62): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(68): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(73): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(79): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(84): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(93): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(281): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(39): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(97): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(125): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(149): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idglobals.h(506): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlwkr.cpp(42): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlwkr.cpp(123): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlwkr.cpp(133): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlwkr.cpp(145): warning C4018: '<' : signed/unsigned mismatch
+         IdXmlUtility.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlutility.cpp(819): warning C4927: illegal conversion; more than one user-defined conversion has been implicitly applied
+                 while calling the constructor 'std::basic_string<_Elem,_Traits,_Ax>::basic_string(const _Elem *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xstring(590) : see declaration of 'std::basic_string<_Elem,_Traits,_Ax>::basic_string'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlutility.cpp(824): warning C4927: illegal conversion; more than one user-defined conversion has been implicitly applied
+                 while calling the constructor 'std::basic_string<_Elem,_Traits,_Ax>::basic_string(const _Elem *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xstring(590) : see declaration of 'std::basic_string<_Elem,_Traits,_Ax>::basic_string'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlutility.cpp(835): warning C4927: illegal conversion; more than one user-defined conversion has been implicitly applied
+                 while calling the constructor 'std::basic_string<_Elem,_Traits,_Ax>::basic_string(const _Elem *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xstring(590) : see declaration of 'std::basic_string<_Elem,_Traits,_Ax>::basic_string'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlutility.cpp(850): warning C4927: illegal conversion; more than one user-defined conversion has been implicitly applied
+                 while calling the constructor 'std::basic_string<_Elem,_Traits,_Ax>::basic_string(const _Elem *)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xstring(590) : see declaration of 'std::basic_string<_Elem,_Traits,_Ax>::basic_string'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+         IdEntityMap.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(57): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(62): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(68): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(73): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(79): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(84): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(93): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idtimeutils.h(281): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(39): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(97): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(125): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\iddeliutility.h(149): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idglobals.h(506): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\include\idstringutils.h(81): warning C4018: '<' : signed/unsigned mismatch
+         DOMParser.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\domparser.cpp(315): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\domparser.cpp(449): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(451) : see declaration of '_itoa'
+         Generating Code...
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlwkr.cpp(94): warning C4715: 'CIdXmlWkr::InsertChild' : not all control paths return a value
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlwkr.cpp(150): warning C4715: 'CIdXmlWkr::InsertAttribute' : not all control paths return a value
+     1>e:\0612cpp01\cams\3rd-apps\ideasxml\src\idxmlwkr.cpp(182): warning C4715: 'CIdXmlWkr::AddSubDoc' : not all control paths return a value
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:".\lib\win32\ideasXML.lib" /NOLOGO Debug\DOMParser.obj
+         Debug\IdEntityMap.obj
+         Debug\IdXmlUtility.obj
+         Debug\IdXmlWkr.obj
+         Debug\Log.obj
+         ideasXML.vcxproj -> E:\0612CPP01\cams\3rd-Apps\ideasXML\.\lib\win32\ideasXML.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\ideasXML.unsuccessfulbuild".
+         Touching "Debug\ideasXML.lastbuildstate".
+     1>Done Building Project "E:\0612CPP01\cams\3rd-Apps\ideasXML\ideasXML.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:31.73

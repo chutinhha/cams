@@ -1,0 +1,57 @@
+[12:38:23]	ENTER : CCAMSCLI :: m_DisplayBanner[12:38:23]	EXIT  : CCAMSCLI :: m_DisplayBanner[12:38:23]	ENTER : CCAMSCLI :: m_AboutCAMS[12:38:23]	EXIT  : CCAMSCLI :: m_AboutCAMS - [1] - 776[12:38:23]	ENTER : CCAMSCLI :: m_GetQuickUserResponse To go back to Main Menu press [M/m], Press Enter Button.
+[12:47:31]	ENTER : CCAMSCLI :: m_DisplayBanner[12:47:31]	EXIT  : CCAMSCLI :: m_DisplayBanner[12:47:31]	ENTER : CCAMSCLI :: m_AboutCAMS[12:47:31]	EXIT  : CCAMSCLI :: m_AboutCAMS - [1] - 776[12:47:31]	ENTER : CCAMSCLI :: m_GetQuickUserResponse To go back to Main Menu press [M/m], Press Enter Button.
+[12:48:45]	ENTER : CCAMSCLI :: m_DisplayBanner[12:48:45]	EXIT  : CCAMSCLI :: m_DisplayBanner[12:48:45]	ENTER : CCAMSCLI :: m_AboutCAMS[12:48:46]	EXIT  : CCAMSCLI :: m_AboutCAMS - [1] - 776[12:48:46]	ENTER : CCAMSCLI :: m_GetQuickUserResponse To go back to Main Menu press [M/m], Press Enter Button.
+[12:49:44]	ENTER : CCAMSCLI :: m_DisplayBanner[12:49:44]	EXIT  : CCAMSCLI :: m_DisplayBanner[12:49:47]	ENTER : CCAMSCLI :: m_AboutCAMS[12:49:47]	EXIT  : CCAMSCLI :: m_AboutCAMS - [1] - 765[12:49:52]	ENTER : CCAMSCLI :: m_GetQuickUserResponse
+
+To go back to Main Menu press [M/m], Press Enter Button.
+[12:50:02]	EXIT  : CCAMSCLI :: m_GetQuickUserResponse[12:50:11]	ENTER : CCAMSCLI :: m_DisplayBanner[12:50:11]	EXIT  : CCAMSCLI :: m_DisplayBanner[08:22:49]	ENTER : CCAMSCLI :: m_DisplayBanner[08:22:49]	EXIT  : CCAMSCLI :: m_DisplayBanner[08:22:49]	ENTER : CCAMSCLI :: m_AboutCAMS[08:22:49]	EXIT  : CCAMSCLI :: m_AboutCAMS - [1] - 765[08:22:49]	ENTER : CCAMSCLI :: m_GetQuickUserResponse
+
+To go back to Main Menu press [M/m], Press Enter Button.
+[08:22:52]	EXIT  : CCAMSCLI :: m_GetQuickUserResponse[08:22:52]	ENTER : CCAMSCLI :: m_DisplayBanner[08:22:52]	EXIT  : CCAMSCLI :: m_DisplayBanner[17:13:00]	ENTER : CCAMSCLI :: m_DisplayBanner[17:13:00]	EXIT  : CCAMSCLI :: m_DisplayBanner[17:13:00]	ENTER : CCAMSCLI :: m_AboutCAMS[17:13:00]	EXIT  : CCAMSCLI :: m_AboutCAMS - [1] - 765[17:13:00]	ENTER : CCAMSCLI :: m_GetQuickUserResponse
+
+To go back to Main Menu press [M/m], Press Enter Button.
+[17:13:08]	EXIT  : CCAMSCLI :: m_GetQuickUserResponse[17:13:08]	ENTER : CCAMSCLI :: m_DisplayBanner[17:13:08]	EXIT  : CCAMSCLI :: m_DisplayBanner[17:41:43]	ENTER : CCAMSCLI :: m_EnterSleepMode
+
+CAMS going to Sleep. Hit Enter Button to wake up again !!!!!
+[17:41:51]	ENTER : CCAMSCLI :: m_GetQuickUserResponse
+
+To go back to Main Menu press [M/m], Press Enter Button.
+[17:43:26]	ENTER : CCAMSCLI :: m_EnterSleepMode
+
+CAMS going to Sleep. Hit Enter Button to wake up again !!!!!
+[17:44:16]	ENTER : CCAMSCLI :: m_EnterSleepMode
+
+CAMS going to Sleep. Hit Enter Button to wake up again !!!!!
+[17:45:21]	ENTER : CCAMSCLI :: m_EnterSleepMode
+
+CAMS going to Sleep. Hit Enter Button to wake up again !!!!!
+[17:48:13]	ENTER : CCAMSCLI :: m_EnterSleepMode
+
+CAMS going to Sleep. Hit Enter Button to wake up again !!!!!
+[17:48:13]	ENTER : CCAMSCLI :: m_WaitForUserResponseCAMS going to sleep, hit any key to get active !!!
+[17:49:03]	ENTER : CCAMSCLI :: m_EnterSleepMode
+
+CAMS going to Sleep. Hit Enter Button to wake up again !!!!!
+[17:49:03]	ENTER : CCAMSCLI :: m_WaitForUserResponseCAMS going to sleep, hit any key to get active !!!
+ Reactivating CAMS
+[17:49:53]	EXIT  : CCAMSCLI :: m_WaitForUserResponse[17:49:53]	EXIT  : CCAMSCLI :: m_EnterSleepMode - [1] - 833[17:49:53]	ENTER : CCAMSCLI :: m_GetQuickUserResponse
+
+To go back to Main Menu press [M/m], Press Enter Button.
+[17:49:53]	EXIT  : CCAMSCLI :: m_GetQuickUserResponse[17:51:20]	ENTER : CCAMSCLI :: m_EnterSleepMode[17:51:20]	ENTER : CCAMSCLI :: m_WaitForUserResponseCAMS going to sleep, hit any key to get active !!!
+ Reactivating CAMS
+[17:52:10]	EXIT  : CCAMSCLI :: m_WaitForUserResponse[17:52:10]	EXIT  : CCAMSCLI :: m_EnterSleepMode - [1] - 833[17:52:10]	ENTER : CCAMSCLI :: m_GetQuickUserResponse
+
+To go back to Main Menu press [M/m], Press Enter Button.
+[17:52:16]	EXIT  : CCAMSCLI :: m_GetQuickUserResponse[17:52:16]	ENTER : CCAMSCLI :: m_DisplayBanner[17:52:16]	EXIT  : CCAMSCLI :: m_DisplayBanner[17:54:14]	ENTER : CCAMSCLI :: m_EnterSleepMode[17:54:16]	ENTER : CCAMSCLI :: m_WaitForUserResponseCAMS going to sleep, hit any key to get active !!!
+[17:56:52]	ENTER : CCAMSCLI :: m_EnterSleepMode
+
+CAMS Version 1.0.0 doesn't support Sleep Mode !!!
+[17:56:52]	EXIT  : CCAMSCLI :: m_EnterSleepMode - [1] - 822[17:56:52]	ENTER : CCAMSCLI :: m_GetQuickUserResponse
+
+To go back to Main Menu press [M/m], Press Enter Button.
+[17:56:55]	EXIT  : CCAMSCLI :: m_GetQuickUserResponse[17:56:55]	ENTER : CCAMSCLI :: m_DisplayBanner[17:56:55]	EXIT  : CCAMSCLI :: m_DisplayBanner
+
+ CAMS Exiting COmpletely, Wait till exit !!!
+
+
+ CAMS Exiting Completely, Wait till exit !!!

@@ -1,0 +1,41 @@
+[22:58:46]	ENTER : CCAMSCLI :: m_Login[22:58:46]	ENTER : CCAMSCLI :: m_DisplayBanner[22:58:46]	EXIT  : CCAMSCLI :: m_DisplayBanner[22:58:46]	ENTER : CCAMSGenUtility :: m_getChar[22:58:55]	 Received <l> from user[22:58:55]	EXIT  : CCAMSGenUtility :: m_getChar[22:58:55]	ENTER : CCAMSCLI :: m_DisplayBanner[22:58:55]	EXIT  : CCAMSCLI :: m_DisplayBanner[22:58:57]	Recevived Username <cams>[22:58:57]	ENTER : CCAMSGenUtility :: m_getPassword[22:59:00]	EXIT  : CCAMSGenUtility :: m_getPassword[22:59:00]	ENTER : CCAMSCLI :: m_ValidateCredentials[22:59:00]	validating the username and password[22:59:00]	ENTER : CCAMSDBUtil :: _Exec_tbluserdetails ()[22:59:00]	------> tbluserdetails <------[22:59:00]	Query received : <select * from tbluserdetails>[22:59:00]	ENTER : CCAMSDBUtil :: m_InvokeConnection[22:59:00]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[22:59:00]	ENTER : CCAMSDBUtil :: m_ConnectionString[22:59:00]	CS    : Forming Connection String[22:59:00]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=password@12345;[22:59:00]	EXIT  : CCAMSDBUtil :: m_ConnectionString[22:59:01]	ENTER : m_show_error[22:59:01]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'Asset'. 01000[22:59:01]	EXIT  : m_show_error[22:59:01]	SQL_SUCCESS_WITH_INFO[22:59:01]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect - [0] - 182[22:59:01]	IC :: m_SQLDriverConnect success[22:59:01]	EXIT  : CCAMSDBUtil :: m_InvokeConnection - [1] - 236[22:59:01]	ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery[22:59:01]	received user query :: <select * from tbluserdetails>[22:59:01]	ENTER : CCAMSDBUtil :: m_CreateSQLQuery[22:59:01]	Query Created : [select * from tbluserdetails][22:59:01]	EXIT  : CCAMSDBUtil :: m_CreateSQLQuery[22:59:01]	Query received : <select * from tbluserdetails>[22:59:01]	EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery[22:59:01]	Executing Query <select * from tbluserdetails>[22:59:01]	m_strtbluserdetails_UserName = cams
+[22:59:01]	m_strtbluserdetails_UserName = cams
+Sahil
+[22:59:01]	m_strtbluserdetails_UserName = cams
+Sahil
+support
+[22:59:01]	m_strtbluserdetails_UserName = cams
+Sahil
+support
+sasasas
+[22:59:01]	m_strtbluserdetails_UserName = cams
+Sahil
+support
+sasasas
+sds
+[22:59:02]	EXIT  : CCAMSDBUtil :: _Exec_tbluserdetails ()[22:59:02]	strUserList = cams
+Sahil
+support
+sasasas
+sds
+[22:59:02]	found = 0[22:59:02]	UserName <cams> found !!![22:59:02]	Skipping validation of paasowrd[22:59:02]	ENTER : CCAMSDBUtil :: _Exec_tbluserdetails ()[22:59:02]	------> tbluserdetails <------[22:59:02]	Query received : <select * from tbluserdetails>[22:59:02]	ENTER : CCAMSDBUtil :: m_InvokeConnection[22:59:02]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[22:59:02]	ENTER : CCAMSDBUtil :: m_ConnectionString[22:59:02]	CS    : Forming Connection String[22:59:02]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=password@12345;[22:59:02]	EXIT  : CCAMSDBUtil :: m_ConnectionString[22:59:02]	ENTER : m_show_error[22:59:02]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'Asset'. 01000[22:59:02]	EXIT  : m_show_error[22:59:02]	SQL_SUCCESS_WITH_INFO[22:59:02]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect - [0] - 182[22:59:02]	IC :: m_SQLDriverConnect success[22:59:02]	EXIT  : CCAMSDBUtil :: m_InvokeConnection - [1] - 236[22:59:02]	ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery[22:59:02]	received user query :: <select * from tbluserdetails>[22:59:02]	ENTER : CCAMSDBUtil :: m_CreateSQLQuery[22:59:02]	Query Created : [select * from tbluserdetails][22:59:02]	EXIT  : CCAMSDBUtil :: m_CreateSQLQuery[22:59:02]	Query received : <select * from tbluserdetails>[22:59:02]	EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery[22:59:02]	Executing Query <select * from tbluserdetails>[22:59:02]	m_strtbluserdetails_Password = cams
+[22:59:02]	m_strtbluserdetails_Password = cams
+cams
+[22:59:02]	m_strtbluserdetails_Password = cams
+cams
+support
+[22:59:02]	m_strtbluserdetails_Password = cams
+cams
+support
+sasasasa
+[22:59:02]	m_strtbluserdetails_Password = cams
+cams
+support
+sasasasa
+df
+[22:59:02]	EXIT  : CCAMSDBUtil :: _Exec_tbluserdetails ()[22:59:02]	strPasswordList = cams
+cams
+support
+sasasasa
+df
+[22:59:02]	found = 5[22:59:02]	Password Match Found !!![22:59:02]	EXIT  : CCAMSCLI :: m_ValidateCredentials - [1] - 497[22:59:02]	EXIT  : CCAMSCLI :: m_Login - [1] - 367

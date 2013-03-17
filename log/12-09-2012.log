@@ -1,0 +1,52 @@
+[10:56:33]	ENTER : CCAMS_Initialize :: m_initialize_config_settings[10:56:33]	Opening Configuration Settings file <../../config/core/cams_settings.xml>XML Load Success:<../../config/core/cams_settings.xml>
+Looking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:DATABASE
+[10:56:33]	Found database = AssetLooking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:SERVER
+[10:56:33]	Found server = win2k8r2x64Looking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:PORT
+[10:56:33]	Found port = 1433Looking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:UID
+[10:56:33]	Found uid = ccplusplusLooking for child node:CONFIGURATION
+Looking for child node:CONNECTION
+Looking for child node:PASSWORD
+[10:56:33]	Found password, skipping print for security reason[10:56:33]	ENTER : CCAMS_Initialize :: m_initialize_config_settings[10:56:33]	ENTER : CCAMSGenUtility :: m_getChar[10:56:34]	 Received <3> from user[10:56:34]	EXIT  : CCAMSGenUtility :: m_getChar[10:56:34]	ch = 3[10:56:34]	ENTER : CCAMSCLI :: m_tblAssetDetails[10:56:34]	ENTER : CCAMSCLI :: m_DisplayBanner[10:56:34]	EXIT  : CCAMSCLI :: m_DisplayBanner
+ Supported Assests List
+ 1. Hardware Assest's
+ 2. Software Assest's
+[10:56:34]	ENTER : CCAMSGenUtility :: m_getChar[10:56:35]	 Received <1> from user[10:56:35]	EXIT  : CCAMSGenUtility :: m_getChar[10:56:35]	cTmp = 1[10:56:35]	ENTER : CCAMSCLI :: m_DisplayBanner[10:56:35]	EXIT  : CCAMSCLI :: m_DisplayBanner[10:56:36]	ENTER : CCAMSCLI :: m_tblAssetDetails_HardWare[10:56:36]	creating query to fetch the no of hardware assets[10:56:36]	ENTER : CCAMSDBUtil :: _Exec_tblAssetDetails ()[10:56:36]	------> tblAssetDetails <------[10:56:36]	Query received : <select * from tblAssetDetails>[10:56:36]	ENTER : CCAMSDBUtil :: m_InvokeConnection[10:56:36]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[10:56:36]	ENTER : CCAMSDBUtil :: m_ConnectionString[10:56:36]	CS    : Forming Connection String[10:56:36]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=password#123;[10:56:36]	EXIT  : CCAMSDBUtil :: m_ConnectionString[10:56:36]	ENTER : m_show_error[10:56:36]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'Asset'. 01000[10:56:36]	EXIT  : m_show_error[10:56:36]	SQL_SUCCESS_WITH_INFO[10:56:36]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect - [0] - 231[10:56:36]	IC :: m_SQLDriverConnect success[10:56:36]	EXIT  : CCAMSDBUtil :: m_InvokeConnection - [1] - 285[10:56:36]	ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery[10:56:36]	received user query :: <select * from tblAssetDetails>[10:56:36]	ENTER : CCAMSDBUtil :: m_CreateSQLQuery[10:56:36]	Query Created : [select * from tblAssetDetails][10:56:36]	EXIT  : CCAMSDBUtil :: m_CreateSQLQuery[10:56:36]	Query received : <select * from tblAssetDetails>[10:56:36]	EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery- [0] - 348[10:56:36]	Executing Query <select * from tblAssetDetails>[10:56:36]	strColumnValue is empty, performing special request operation[10:56:36]	found <1> rows in table tblAssetDetails[10:56:36]	strColumnValue is empty, performing special request operation[10:56:36]	found <2> rows in table tblAssetDetails[10:56:36]	3	002	Laptop	2	2	2	02	laptop product	1	Dell	2222	2222	7000.700000	2000	0[10:56:36]	EXIT  : CCAMSDBUtil :: _Exec_tblAssetDetails ()[10:56:36]	ENTER : CCAMSDBUtil :: m_GetNumOfAssetRow ()[10:56:36]	Query received : <select * from tblAssetDetails>[10:56:36]	ENTER : CCAMSDBUtil :: m_InvokeConnection[10:56:36]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[10:56:36]	ENTER : CCAMSDBUtil :: m_ConnectionString[10:56:36]	CS    : Forming Connection String[10:56:36]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=password#123;[10:56:36]	EXIT  : CCAMSDBUtil :: m_ConnectionString[10:56:36]	ENTER : m_show_error[10:56:36]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'Asset'. 01000[10:56:36]	EXIT  : m_show_error[10:56:36]	SQL_SUCCESS_WITH_INFO[10:56:36]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect - [0] - 231[10:56:36]	IC :: m_SQLDriverConnect success[10:56:36]	EXIT  : CCAMSDBUtil :: m_InvokeConnection - [1] - 285[10:56:36]	ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery[10:56:36]	received user query :: <select * from tblAssetDetails>[10:56:36]	ENTER : CCAMSDBUtil :: m_CreateSQLQuery[10:56:36]	Query Created : [select * from tblAssetDetails][10:56:36]	EXIT  : CCAMSDBUtil :: m_CreateSQLQuery[10:56:36]	Query received : <select * from tblAssetDetails>[10:56:36]	EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery- [0] - 348[10:56:36]	Executing Query <select * from tblAssetDetails>[10:56:36]	Found <1> rows[10:56:36]	Found <2> rows[10:56:36]	EXIT  : CCAMSDBUtil :: m_GetNumOfAssetRow ()[10:56:36]	Found a total of [2] entries[10:56:36]	ENTER : CCAMSDBUtil :: m_tblAssetDetails_HardWare_GetNumOfAsset ()[10:56:36]	Query received : <select AssetCode from tblAssetDetails>[10:56:36]	ENTER : CCAMSDBUtil :: m_InvokeConnection[10:56:36]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[10:56:36]	ENTER : CCAMSDBUtil :: m_ConnectionString[10:56:36]	CS    : Forming Connection String[10:56:36]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=password#123;[10:56:36]	EXIT  : CCAMSDBUtil :: m_ConnectionString[10:56:36]	ENTER : m_show_error[10:56:36]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'Asset'. 01000[10:56:36]	EXIT  : m_show_error[10:56:36]	SQL_SUCCESS_WITH_INFO[10:56:36]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect - [0] - 231[10:56:36]	IC :: m_SQLDriverConnect success[10:56:36]	EXIT  : CCAMSDBUtil :: m_InvokeConnection - [1] - 285[10:56:36]	ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery[10:56:36]	received user query :: <select AssetCode from tblAssetDetails>[10:56:36]	ENTER : CCAMSDBUtil :: m_CreateSQLQuery[10:56:36]	Query Created : [select AssetCode from tblAssetDetails][10:56:36]	EXIT  : CCAMSDBUtil :: m_CreateSQLQuery[10:56:36]	Query received : <select AssetCode from tblAssetDetails>[10:56:36]	EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery- [0] - 348[10:56:36]	Executing Query <select AssetCode from tblAssetDetails>[10:56:36]	checkig whether vecot already has some entry[10:56:36]	vecor empty[10:56:36]	Inserting [001] in vector list[10:56:36]	Printing vector[10:56:36]	[0] : AssedCode = 001[10:56:36]	Found <1> rows[10:56:36]	Inserting [002] in vector list[10:56:36]	Printing vector[10:56:36]	[0] : AssedCode = 001[10:56:36]	[1] : AssedCode = 002[10:56:36]	Found <2> rows[10:56:36]	EXIT  : CCAMSDBUtil :: m_GetNumOfAssetRow () S.No	- Asset Name	- Asset Code
+----------------------------------------
+ [1]	      Laptop          [001]    
+ [2]	      Laptop          [002]    
+----------------------------------------
+
+ Enter the Asset Code : 
+[10:56:39]	ENTER : CCAMSCLI :: m_DisplayBanner[10:56:39]	EXIT  : CCAMSCLI :: m_DisplayBanner 
+Fetching Asset Details for Asset Code 001
+
+[10:56:40]	Validating user input[10:56:40]	Matching [001] against [001][10:56:40]	AssetCode [001] found in the Database[10:56:40]	Creating Query to fetch the Asset details for Asset Code <001>[10:56:40]	ENTER : CCAMSDBUtil :: m_CreatetblAssetDetailsQuery ()[10:56:40]	Query Created = <select * from tblAssetDetails where AssetCode = '001'>[10:56:40]	EXIT  : CCAMSDBUtil :: m_CreatetblAssetDetailsQuery () - <0> -1057[10:56:40]	ENTER : CCAMSDBUtil :: _Exec_tblAssetDetails ()[10:56:40]	------> tblAssetDetails <------[10:56:40]	Query received : <select * from tblAssetDetails where AssetCode = '001'>[10:56:40]	ENTER : CCAMSDBUtil :: m_InvokeConnection[10:56:40]	ENTER : CCAMSDBUtil :: m_SQLDriverConnect[10:56:40]	ENTER : CCAMSDBUtil :: m_ConnectionString[10:56:40]	CS    : Forming Connection String[10:56:40]	CS    : m_strConnectionString = DRIVER={SQL Server};SERVER=win2k8r2x64,1433;DATABASE=Asset;UID=ccplusplus;PWD=password#123;[10:56:40]	EXIT  : CCAMSDBUtil :: m_ConnectionString[10:56:40]	ENTER : m_show_error[10:56:40]	SQLSTATE: = [Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'Asset'. 01000[10:56:40]	EXIT  : m_show_error[10:56:40]	SQL_SUCCESS_WITH_INFO[10:56:40]	EXIT  : CCAMSDBUtil :: m_SQLDriverConnect - [0] - 231[10:56:40]	IC :: m_SQLDriverConnect success[10:56:40]	EXIT  : CCAMSDBUtil :: m_InvokeConnection - [1] - 285[10:56:40]	ENTER : CCAMSDBUtil :: m_ReceiveSQLQuery[10:56:40]	received user query :: <select * from tblAssetDetails where AssetCode = '001'>[10:56:40]	ENTER : CCAMSDBUtil :: m_CreateSQLQuery[10:56:40]	Query Created : [select * from tblAssetDetails where AssetCode = '001'][10:56:40]	EXIT  : CCAMSDBUtil :: m_CreateSQLQuery[10:56:40]	Query received : <select * from tblAssetDetails where AssetCode = '001'>[10:56:40]	EXIT  : CCAMSDBUtil :: m_ReceiveSQLQuery- [0] - 348[10:56:40]	Executing Query <select * from tblAssetDetails where AssetCode = '001'>[10:56:40]	m_strtblAssetDetails_AssetCode = 001
+[10:56:40]	2	001	Laptop	1	1	1	01	laptop product	1	Lenovo	1111	1111	5000.500000	1000	0[10:56:40]	EXIT  : CCAMSDBUtil :: _Exec_tblAssetDetails () Asset Details with Asset Code [001]
+
+
+ ----------------------------------------
+
+    Id                 :   2
+    Asset Code         :   001
+    Asset Name         :   Laptop
+    Asset Group        :   1
+    Supplier           :   1
+    Support Provider   :   1
+    Catalog No         :   01
+    Description        :   laptop product
+    Asset Type         :   1
+    Asset Model        :   Lenovo
+    Company Serial     :   1111
+    Asset Model        :   1111
+
+ ----------------------------------------
+
+[10:56:40]	EXIT  : CCAMSCLI :: m_tblAssetDetails_HardWare - [1] - 898[10:56:40]	ENTER : CCAMSGenUtility :: m_getChar[10:56:43]	 Received <m> from user[10:56:43]	EXIT  : CCAMSGenUtility :: m_getChar[10:56:43]	ENTER : CCAMSCLI :: m_DisplayBanner[10:56:43]	EXIT  : CCAMSCLI :: m_DisplayBanner[10:56:43]	ENTER : CCAMSGenUtility :: m_getChar[10:56:43]	 Received <> from user[10:56:43]	EXIT  : CCAMSGenUtility :: m_getChar[10:56:43]	ch = [10:56:43]	EXIT  : CCAMSCLI :: m_tblAssetDetails - [0] - 754
