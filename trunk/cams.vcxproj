@@ -99,6 +99,7 @@
     <ClCompile Include="src\CAMS_Language_Support.cpp" />
     <ClCompile Include="src\CAMS_Log.cpp" />
     <ClCompile Include="src\CAMS_Wrapper.cpp" />
+    <ClCompile Include="src\CAMS_XML_Database.cpp" />
     <ClCompile Include="src\ideasXML\DOMParser.cpp" />
     <ClCompile Include="src\ideasXML\IdEntityMap.cpp" />
     <ClCompile Include="src\ideasXML\IdXmlUtility.cpp" />
@@ -119,6 +120,7 @@
     <ClInclude Include="include\CAMS_Query_List.h" />
     <ClInclude Include="include\CAMS_Windows_Include.h" />
     <ClInclude Include="include\CAMS_Wrapper.h" />
+    <ClInclude Include="include\CAMS_XML_Database.h" />
     <ClInclude Include="include\IdDeliUtility.h" />
     <ClInclude Include="include\ideasXML\DOMParser.h" />
     <ClInclude Include="include\ideasXML\IdCommons.h" />
