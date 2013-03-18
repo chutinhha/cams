@@ -19,6 +19,12 @@
     <Filter Include="Header Files\ideasXML">
       <UniqueIdentifier>{c2101262-4861-421e-9d66-062075b705fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Database">
+      <UniqueIdentifier>{e1967d07-f641-4370-8e36-b1694bfb04ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database">
+      <UniqueIdentifier>{0928d1ab-48e0-4b38-8659-b3d74bbe53b9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CAMS_DBUtil.cpp">
@@ -67,7 +73,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\CAMS_XML_Database.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Database</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -162,7 +168,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\CAMS_XML_Database.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Database</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
