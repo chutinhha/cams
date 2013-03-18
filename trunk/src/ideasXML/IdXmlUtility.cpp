@@ -63,38 +63,51 @@ void CIdXmlUtility::Close()
 
 bool CIdXmlUtility::OpenXMLFile(const char* szXMLFilePath)
 {
+    g_tLog.WriteLog ("ENTER : CIdXmlUtility :: OpenXMLFile");
+
+    g_tLog.WriteLog ("Creating DOM");
 	CreateDOM();
+    g_tLog.WriteLog ("Creating DOM - Success");
+
 	if( !m_domParser->Load(szXMLFilePath) )
 	{
 		g_tLog.WriteLog("XML Load Error:<%s> !!", szXMLFilePath);
 		m_status = false;
+        g_tLog.WriteLog ("EXIT  : CIdXmlUtility :: OpenXMLFile");
 		return false;
 	}
 	g_tLog.WriteLog("XML Load Success:<%s>", szXMLFilePath);
 	m_status = true;
+
+    g_tLog.WriteLog ("EXIT  : CIdXmlUtility :: OpenXMLFile");
 	return true;
 }
 
 bool CIdXmlUtility::OpenXMLString(const char* szXMLString)
 {
+    g_tLog.WriteLog ("ENTER : CIdXmlUtility :: OpenXMLString");
 	CreateDOM();
 	if(!m_domParser->SetDoc(szXMLString))
 	{
 		g_tLog.WriteLog("XML Load String Error !!\n%s\n", szXMLString);
+        g_tLog.WriteLog ("ENTER : CIdXmlUtility :: OpenXMLString");
 		return false;
 	}
-
+    g_tLog.WriteLog ("EXIT  : CIdXmlUtility :: OpenXMLString");
 	return true;
 }
 
 void CIdXmlUtility::CreateDOM()
 {
+    g_tLog.WriteLog ("ENTER : CIdXmlUtility :: CreateDOM");
 	if(m_bDomExists)
 	{
+        g_tLog.WriteLog ("Drop the existing DOM tree");
 		CHECK_DELETE(m_domParser); // Drop the existing DOM tree
 	}
 	else
 	{
+        g_tLog.WriteLog ("Creating the new DOM tree");
 		m_bDomExists = true;
 	}
 
@@ -103,6 +116,7 @@ void CIdXmlUtility::CreateDOM()
 	#else
 		m_domParser = new CDOMParserSTL();
 	#endif
+    g_tLog.WriteLog ("EXIT  : CIdXmlUtility :: CreateDOM");
 }
 
 //static string settingspath = g_tEngine->m_strInstRoot + FPATH_SETTINGS;
@@ -113,6 +127,7 @@ void CIdXmlUtility::dumpDoc()
 
 stringCollection_t CIdXmlUtility::getNodes(string path)
 {
+    g_tLog.WriteLog ("ENTER : CIdXmlUtility :: getNodes");
 	istrstream sstream(path.c_str());
 	//const int max_node_depth = 4; //by default we expect xml node depth of max_node_depth
 	//stringCollection_t & nodes = * new stringCollection_t(max_node_depth);
@@ -131,6 +146,7 @@ stringCollection_t CIdXmlUtility::getNodes(string path)
         break;
     }
 	delete [] buffer;
+    g_tLog.WriteLog ("EXIT  : CIdXmlUtility :: getNodes");
     return nodes;
 }
 
@@ -158,10 +174,11 @@ case 3: Value is present
 */
 int CIdXmlUtility::GetValue(string strElementPath,string &strValue)
 {
+      g_tLog.WriteLog ("ENTER : CIdXmlUtility :: GetValue");
 	  m_strElementPath = strElementPath;
 	  stringCollection_t nodes = getNodes(m_strElementPath);
 
-	  m_domParser->ResetPos();//set current element of parser to root
+	  m_domParser->ResetPos();          //set current element of parser to root
 	  strCollIter_t i=nodes.begin();	//skip the root node (ie Settings node)
 	  i++;
 	  for(; i != nodes.end(); i++ )
@@ -177,6 +194,7 @@ int CIdXmlUtility::GetValue(string strElementPath,string &strValue)
 			#else
 				g_tLog.WriteLog("DOM Error Status:%s", m_domParser->GetError().c_str());
 			#endif
+            g_tLog.WriteLog ("EXIT  : CIdXmlUtility :: GetValue - [%d %d]", EPATH, __LINE__);
 			return EPATH;
 		}
 		else
@@ -184,15 +202,19 @@ int CIdXmlUtility::GetValue(string strElementPath,string &strValue)
 	  }
 	  strValue = m_domParser->GetData();
 	  if(strValue == "" )
+      {
+          g_tLog.WriteLog ("EXIT  : CIdXmlUtility :: GetValue - [%d %d]", EMISSING, __LINE__);
 	  	  return EMISSING;
+      }
 	  else
-		   return ESUCCESS;
-
+      {
+          g_tLog.WriteLog ("EXIT  : CIdXmlUtility :: GetValue - [%d %d]", EMISSING, __LINE__);
+		  return ESUCCESS;
+      }
 }
 
 int CIdXmlUtility::GetAttrValue(string strElementPath,string strAttrName,string &strValue)
 {
-
 	m_strElementPath = strElementPath;
     stringCollection_t nodes = getNodes(m_strElementPath);
 
@@ -219,10 +241,13 @@ int CIdXmlUtility::GetAttrValue(string strElementPath,string strAttrName,string 
     }
     strValue = m_domParser->GetAttrib(strAttrName.c_str());
 	if(strValue == "" )	// check the value and return accordingly
+    {
 		   return EMISSING;
+    }
     else
+    {
 	       return ESUCCESS;
-
+    }
 }
 
 /*

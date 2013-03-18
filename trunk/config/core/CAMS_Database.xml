@@ -1,0 +1,18 @@
+<CAMS>
+	<CONFIGURATION>
+		<DATABASE>
+			<ASSET>
+				<ITEM_1>
+					<NAME>Name_1</NAME>
+					<CATEGORY>Category_1</CATEGORY>
+					<DESCRIPTION>Item_1 Description</DESCRIPTION>
+					<RECORD>
+						<TOTAL>10</TOTAL>
+						<USED>5</USED>
+						<FREE>5</FREE>
+					</RECORD>
+				</ITEM_1>			
+			</ASSET>
+		</DATABASE>
+	</CONFIGURATION>
+</CAMS>
