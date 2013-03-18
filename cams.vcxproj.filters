@@ -66,6 +66,9 @@
     <ClCompile Include="src\CAMS_Initialize.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\CAMS_XML_Database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CAMSDBUtil.h">
@@ -156,6 +159,9 @@
       <Filter>Header Files\ideasXML</Filter>
     </ClInclude>
     <ClInclude Include="include\CAMS_Initialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAMS_XML_Database.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
