@@ -34,8 +34,8 @@
 #include <iostream>
 
 extern class CLog g_tLog;
-extern CCAMSDBUtil g_dbu;
-extern CCAMS_Initialize g_inlz;
+extern class CCAMSDBUtil g_dbu;
+extern class CCAMS_Initialize g_inlz;
 
 using namespace std;
 
@@ -47,13 +47,27 @@ CCAMS_Initialize :: ~CCAMS_Initialize ()
 {
 }
 
-void CCAMS_Initialize :: m_initialize_logger ()
-{
+/*----------------------------------------------------------------------------
+ * Function     :   m_initialize_logger
+ * Description  :   Initialize the logging framework
+ * Arguments    :   none
+ * Return       :   none
+ * Note         :
+ *----------------------------------------------------------------------------*/
+ void CCAMS_Initialize :: m_initialize_logger ()
+ {
 	g_tLog.Open("../../log/", false);
-}
+ }
 
-void CCAMS_Initialize :: m_initialize_config_settings ()
-{
+/*----------------------------------------------------------------------------
+ * Function     :   m_initialize_config_settings
+ * Description  :   Initialize the cams global setting before start.
+ * Arguments    :   none
+ * Return       :   none
+ * Note         :
+ *----------------------------------------------------------------------------*/
+ void CCAMS_Initialize :: m_initialize_config_settings ()
+ {
     g_tLog.WriteLog ("ENTER : CCAMS_Initialize :: m_initialize_config_settings");
 
 	CIdXmlUtility xmlu;
@@ -77,5 +91,6 @@ void CCAMS_Initialize :: m_initialize_config_settings ()
     xmlu.GetValue (CONN_PASSWORD, g_dbu.m_strPWD);
     g_tLog.WriteLog ("Found password, skipping print for security reason");
 
-    g_tLog.WriteLog ("ENTER : CCAMS_Initialize :: m_initialize_config_settings");
-}
+    g_tLog.WriteLog ("EXIT  : CCAMS_Initialize :: m_initialize_config_settings");
+ }
+
