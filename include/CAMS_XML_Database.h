@@ -8,6 +8,8 @@ class CCAMSXMLDatabase
     public:
         CCAMSXMLDatabase ();
        ~CCAMSXMLDatabase ();
+        void m_test ();
+
 };
 
 extern CCAMSXMLDatabase g_xmld;

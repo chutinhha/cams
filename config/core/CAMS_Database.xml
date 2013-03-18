@@ -2,10 +2,7 @@
 	<CONFIGURATION>
 		<DATABASE>
 			<ASSET>
-				<ITEM_1>
-					<NAME>Name_1</NAME>
-					<CATEGORY>Category_1</CATEGORY>
-					<DESCRIPTION>Item_1 Description</DESCRIPTION>
+				<ITEM_1 name="name_1" category="category_1" descriptoin ="tem_1 description">
 					<RECORD>
 						<TOTAL>10</TOTAL>
 						<USED>5</USED>
