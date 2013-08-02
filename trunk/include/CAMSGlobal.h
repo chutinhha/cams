@@ -51,5 +51,8 @@ const int const DEPT                =   1;
 
 //configuration files
 #define     CAMS_CONFIG_SETTINGS           "../../config/core/cams_settings.xml"
- 
+#define		XML_DATABASE				   "../../config/core/CAMS_Database.xml"
+
+#define DB_CONNECT
+
 #endif //__CAMSGLOBAL_

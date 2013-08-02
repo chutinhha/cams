@@ -41,6 +41,7 @@
 #include "CAMS_Initialize.h"
 #include "IdPLatformSpDfns.h"
 #include "CAMS_Instance_Control.h"
+#include "DB_Connect.h"
 
 extern class CLog g_tLog;
 CCAMS_Initialize g_inlz;
@@ -52,7 +53,11 @@ using namespace std;
 int main (int argc, char **argv)
 {
 	CLEAR
-
+#ifdef DB_CONNECT
+	CDB_Connect dbtest;
+	dbtest.m_InvokeConnection ();
+	dbtest._Exec_gen_tblMastertable ("select * from tblAssetDetails", "CatalogName");
+#else
     CCAMSInstanceControl *cams;
     cams = CCAMSInstanceControl::getInstance();
     // obtain the cli single object 
@@ -82,6 +87,6 @@ int main (int argc, char **argv)
     //delete cli;
     cams->cleanup ();
 	delete cams;
-
+#endif //DB_CONNECT
 	return 0;
 }

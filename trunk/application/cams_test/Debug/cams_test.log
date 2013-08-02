@@ -1,9 +1,25 @@
-﻿Build started 3/17/2013 2:02:31 PM.
-     1>Project "E:\0612CPP01\cams\application\cams_test\cams_test.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\cams_test.lastbuildstate".
-     1>Done Building Project "E:\0612CPP01\cams\application\cams_test\cams_test.vcxproj" (clean target(s)).
+﻿Build started 8/2/2013 4:45:46 PM.
+     1>Project "D:\code.google.com\cams\application\cams_test\cams_test.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\cams_test.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\win32\cams_test.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\lib\win32 /LIBPATH:"..\..\3rd-Apps\ideasXML\lib\win32" /LIBPATH:"..\..\3rd-Apps\fsEDs\lib\win32" DB_Connect.lib fsEDs.lib cams.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\cams_test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\code.google.com\cams\bin\win32\cams_test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\win32\cams_test.lib" /MACHINE:X86 Debug\cams_test.exe.embed.manifest.res
+         Debug\CAMS_Test.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\cams_test.exe.embed.manifest" /manifest Debug\cams_test.exe.intermediate.manifest "C:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         cams_test.vcxproj -> D:\code.google.com\cams\application\cams_test\..\..\bin\win32\cams_test.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\cams_test.unsuccessfulbuild".
+         Touching "Debug\cams_test.lastbuildstate".
+     1>Done Building Project "D:\code.google.com\cams\application\cams_test\cams_test.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.06
+Time Elapsed 00:00:01.29
