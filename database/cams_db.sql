@@ -18,7 +18,7 @@ delete from Persons where P_Id='5'
 */
 
 
-use Asset
+use cams
 
 ----tbluserdetails------
 

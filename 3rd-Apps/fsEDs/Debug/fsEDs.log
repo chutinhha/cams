@@ -1,9 +1,68 @@
-﻿Build started 3/17/2013 2:02:31 PM.
-     1>Project "E:\0612CPP01\cams\3rd-Apps\fsEDs\fsEDs.vcxproj" on node 3 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\fsEDs.lastbuildstate".
-     1>Done Building Project "E:\0612CPP01\cams\3rd-Apps\fsEDs\fsEDs.vcxproj" (clean target(s)).
+﻿Build started 8/2/2013 10:39:34 AM.
+     1>Project "D:\code.google.com\cams\3rd-Apps\fsEDs\fsEDs.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\fsEDs.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\include /ZI /nologo /W3 /WX- /Od /Oy- /D FSEDS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt src\fsDEsCipher.c src\fsDEsCipher_init.c src\fsDEsCli.c src\fsDEsCommon.c src\fsDEsHash.c src\fsDEsHash_table.c src\fsDEsRandom.c src\fsDEsStream.c
+         fsDEsStream.c
+         fsDEsRandom.c
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdesrandom.c(55): warning C4013: 'time' undefined; assuming extern returning int
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdesrandom.c(55): warning C4013: 'clock' undefined; assuming extern returning int
+         fsDEsHash_table.c
+         fsDEsHash.c
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdeshash.c(325): warning C4018: '<' : signed/unsigned mismatch
+         fsDEsCommon.c
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescommon.c(63): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescommon.c(103): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         fsDEsCli.c
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(71): warning C4244: 'initializing' : conversion from 'size_t' to 'float', possible loss of data
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(145): warning C4013: 'time' undefined; assuming extern returning int
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(158): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(188): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(209): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(226): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(229): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(175) : see declaration of 'strncat'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(233): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(175) : see declaration of 'strncat'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(238): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(267): warning C4244: 'function' : conversion from 'time_t' to 'size_t', possible loss of data
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescli.c(139): warning C4101: 'key' : unreferenced local variable
+         fsDEsCipher_init.c
+         fsDEsCipher.c
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescipher.c(127): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescipher.c(135): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescipher.c(155): warning C4013: 'fsize' undefined; assuming extern returning int
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescipher.c(186): warning C4013: 'block_8_to_32' undefined; assuming extern returning int
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescipher.c(196): warning C4013: 'block_32_to_8' undefined; assuming extern returning int
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescipher.c(233): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\code.google.com\cams\3rd-apps\fseds\src\fsdescipher.c(239): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         Generating Code...
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:".\lib\win32\fsEDs.lib" /NOLOGO Debug\fsDEsCipher.obj
+         Debug\fsDEsCipher_init.obj
+         Debug\fsDEsCli.obj
+         Debug\fsDEsCommon.obj
+         Debug\fsDEsHash.obj
+         Debug\fsDEsHash_table.obj
+         Debug\fsDEsRandom.obj
+         Debug\fsDEsStream.obj
+         fsEDs.vcxproj -> D:\code.google.com\cams\3rd-Apps\fsEDs\.\lib\win32\fsEDs.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\fsEDs.unsuccessfulbuild".
+         Touching "Debug\fsEDs.lastbuildstate".
+     1>Done Building Project "D:\code.google.com\cams\3rd-Apps\fsEDs\fsEDs.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.03
+Time Elapsed 00:00:03.82

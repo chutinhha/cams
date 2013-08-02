@@ -14,6 +14,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cams_test", "application\ca
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fsEDs", "3rd-Apps\fsEDs\fsEDs.vcxproj", "{0B22C943-D026-4CD9-B4E0-69302D072D70}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DB_Connect", "3rd-Apps\DB_Connect\DB_Connect.vcxproj", "{2DFE798E-D3A0-4FD8-B11E-B48B9694946F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -32,6 +34,10 @@ Global
 		{0B22C943-D026-4CD9-B4E0-69302D072D70}.Debug|Win32.Build.0 = Debug|Win32
 		{0B22C943-D026-4CD9-B4E0-69302D072D70}.Release|Win32.ActiveCfg = Release|Win32
 		{0B22C943-D026-4CD9-B4E0-69302D072D70}.Release|Win32.Build.0 = Release|Win32
+		{2DFE798E-D3A0-4FD8-B11E-B48B9694946F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2DFE798E-D3A0-4FD8-B11E-B48B9694946F}.Debug|Win32.Build.0 = Debug|Win32
+		{2DFE798E-D3A0-4FD8-B11E-B48B9694946F}.Release|Win32.ActiveCfg = Release|Win32
+		{2DFE798E-D3A0-4FD8-B11E-B48B9694946F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
